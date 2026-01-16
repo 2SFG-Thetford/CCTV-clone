@@ -1,6 +1,6 @@
 let
     // 1. Load all files from folder
-    Source = Folder.Files("\\2sfg.net\filestore\Thetford Filestore\Technical\02 Audits\Internal Audits\2024-2025\CCTV Audit\CCTV Sediment tray\Testing"),
+    Source = Folder.Files //("\\xxxx.net\filestore\Thetford Filestore\...."),
 
     // 2. Filter Excel files (any case)
     ExcelFiles = Table.SelectRows(Source, each Text.Lower(Text.Trim([Extension])) = ".xlsx"),
